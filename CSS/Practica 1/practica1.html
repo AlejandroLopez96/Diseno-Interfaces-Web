@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<style>
+		.elemento1 {
+			width:100px;
+			height:50px;
+			top:30px;
+			left:50px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow: -3px -3px 0px grey;
+		}
+		
+		.elemento2 {
+			width:100px;
+			height:50px;
+			top:30px;
+			left:200px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow: -3px -3px 5px grey; -3px -3px 0px 3px
+		}
+		
+		.elemento3 {
+			width:100px;
+			height:50px;
+			top:30px;
+			left:350px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow: -3px -3px 0px 3px grey; 
+		}
+		
+		.elemento4 {
+			width:100px;
+			height:50px;
+			top:120px;
+			left:50px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow: -3px -3px 5px 3px grey; 
+		}
+		
+		.elemento5 {
+			width:100px;
+			height:50px;
+			top:120px;
+			left:200px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow: 0px 0px 1px 2px rgba(158, 158, 158, 0.36); 
+		}
+		
+		.elemento6 {
+			width:100px;
+			height:50px;
+			top:120px;
+			left:350px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow: 0px 0px 5px 2px grey;
+		}
+		
+		.elemento7 {
+			width:100px;
+			height:50px;
+			top:210px;
+			left:50px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow: 2px 2px 0px 2px grey;  
+		}
+		
+		.elemento8 {
+			width:100px;
+			height:50px;
+			top:210px;
+			left:200px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow:  inset -13px -13px 8px -10px grey; 
+		}
+		
+		.elemento9 {
+			width:100px;
+			height:50px;
+			top:210px;
+			left:350px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow: 4px 4px 0px 4px grey;  
+		}
+		
+		.elemento10 {
+			width:100px;
+			height:50px;
+			top:300px;
+			left:50px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow:  inset -13px -13px 12px -6px grey;
+		}
+		
+		.elemento11 {
+			width:100px;
+			height:50px;
+			top:300px;
+			left:200px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow:  inset 0px 0px 4px 2px rgba(158, 158, 158, 0.36); 
+		}
+		
+		.elemento12 {
+			width:100px;
+			height:50px;
+			top:300px;
+			left:350px;
+			position:absolute;
+			background-color:rgba(158, 158, 158, 0.22);
+			box-shadow:  inset 0px 0px 8px 2px grey; 
+		}
+		
+		.elemento13 {
+			width:100px;
+			height:50px;
+			top:390px;
+			left:50px;
+			position:absolute;
+			background-color:grey;
+			border-radius: 0px 0px 35px 0px;
+		}
+		
+		.elemento14 {
+			width:100px;
+			height:50px;
+			top:390px;
+			left:200px;
+			position:absolute;
+			background-color:grey;
+			border-bottom-right-radius: 40px 20px;
+		}
+		
+		.elemento15 {
+			width:100px;
+			height:50px;
+			top:390px;
+			left:350px;
+			position:absolute;
+			background-color:grey;
+			border-bottom-right-radius: 20px 40px;
+		}
+		
+		.elemento16 {
+			width:100px;
+			height:50px;
+			top:480px;
+			left:50px;
+			position:absolute;
+			background-color:grey;
+			border-radius: 20px 80px;
+		}
+		
+		.elemento17 {
+			width:100px;
+			height:50px;
+			top:480px;
+			left:200px;
+			position:absolute;
+			background-color:grey;
+			border-bottom-right-radius: 30px 10px;
+			border-top-right-radius:10px 30px;
+			border-bottom-left-radius:10px 30px;
+			border-top-left-radius:30px 10px;
+		}
+		
+		.elemento18 {
+			width:50px;
+			height:50px;
+			top:480px;
+			left:350px;
+			position:absolute;
+			background-color:grey;
+			border-radius: 100%;
+		}
+		
+		.texto1{
+			position:absolute;
+			top:30px;
+			left:500px;
+			font-size:20px;
+		}
+		
+		.texto2{
+			position:absolute;
+			top:120px;
+			left:500px;
+			font-size:20px;
+			text-shadow:0px 0px 23px red,-1px 1px 0px black;
+			color:white;
+		}
+		
+		.texto3{
+			position:absolute;
+			top:210px;
+			left:500px;
+			font-size:20px;
+			text-shadow:-3px 0px 4px #f00, 0px 3px 2px #0046ff, 3px -1px 2px #17561f;
+		}
+		
+		.texto4{
+			position:absolute;
+			top:300px;
+			left:500px;
+			font-size:20px;
+			text-shadow: 1px 1px black, 1px 0px black,1px 0px black;
+		    background-color: #ddd;
+		    color: #fff;
+		    padding: 10px;
+		}
+		
+		.texto5{
+			position:absolute;
+			top:390px;
+			left:500px;
+			font-size:20px;
+			text-shadow: -1px -1px white,1px 0px 2px #666;
+			background-color: #949494;
+		    color: #949494;
+		    padding: 10px;
+		}
+		
+		.texto6{
+			position:absolute;
+			top:480px;
+			left:500px;
+			font-size:20px;
+			text-shadow: 1px 1px white, -1px -1px #666;
+		    background-color: #ddd;
+		    color: #ddd;
+		    padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="elemento1"></div>
+    <div class="elemento2"></div>
+    <div class="elemento3"></div>
+    <div class="elemento4"></div>
+    <div class="elemento5"></div>
+    <div class="elemento6"></div>
+    <div class="elemento7"></div>
+    <div class="elemento8"></div>
+    <div class="elemento9"></div>
+    <div class="elemento10"></div>
+    <div class="elemento11"></div>
+    <div class="elemento12"></div>
+    <div class="elemento13"></div>
+    <div class="elemento14"></div>
+    <div class="elemento15"></div>
+    <div class="elemento16"></div>
+    <div class="elemento17"></div>
+    <div class="elemento18"></div>
+    <div class="texto1">Las sombras fueron definidas en 1997</div>
+    <div class="texto2">Las sombras fueron definidas en 1997</div>
+    <div class="texto3">Las sombras fueron definidas en 1997</div>
+    <div class="texto4">Las sombras fueron definidas en 1997</div>
+    <div class="texto5">Las sombras fueron definidas en 1997</div>
+    <div class="texto6">Las sombras fueron definidas en 1997</div>
+</body>
+</html>

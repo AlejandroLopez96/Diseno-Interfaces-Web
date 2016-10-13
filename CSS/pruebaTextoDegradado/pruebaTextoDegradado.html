@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<style>
+			#primero  {
+				background-image:url("sprite.png"); /* Imagen fondo */
+			 -webkit-background-clip: text; /* Con esto adaptamos el degradado al texto */
+			 -webkit-text-fill-color: transparent; /* Ocultamos el color del texto para no afectar el 
+				degradado */
+			 font-size:6em;
+			} 
+			#segundo  {
+				background-image:-webkit-gradient(linear,left top,left bottom,from(blue),to(black)); /* 
+			  Degradado */
+			  -webkit-background-clip: text; /* Con esto adaptamos el degradado al texto */
+			  -webkit-text-fill-color: transparent; /* Ocultamos el color del texto para no afectar el 
+			  degradado */
+			  font-size:4em;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1 id="primero">Texto degradado</h1>
+		<h1 id="segundo">Texto degradado</h1>
+	</body>
+</html>

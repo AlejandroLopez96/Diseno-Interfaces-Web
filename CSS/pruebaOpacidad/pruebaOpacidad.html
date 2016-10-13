@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<style>
+		#primero,#segundo,#tercero{
+			width:300px;
+			height:300px;
+			position:absolute;
+			border-style: solid;
+		}
+		#segundo, #tercero {
+			opacity: 0.5;
+		}
+		#primero {
+			background-color: blue;
+			left:10px;
+			top:10px;
+		}
+		#segundo {
+			background-color: red;
+			left:30px;
+			top:30px;
+		}
+		#tercero {
+			background-color: green;
+			left:50px;
+			top:50px;
+		}
+		#segundo, #tercero {
+			filter: alpha(opacity=50);
+		}
+	</style>
+</head>
+<body>
+	<div id="primero">PRIMERO</div>
+	<div id="segundo">SEGUNDO</div>
+	<div id="tercero">TERCERO</div>
+</body>
+</html>
