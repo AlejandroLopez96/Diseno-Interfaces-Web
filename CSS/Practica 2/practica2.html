@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+<style>
+	body {
+		padding:0;
+		margin:0;
+	}
+	#fondo{
+		background-image:url("imagenes/fondo.jpg");
+		background-repeat: no-repeat;
+		margin-top:216px;
+		transform:scale(1.6);
+		padding-right:0px;
+		background-size:120% 708px;
+		width:76.95%;	
+		height:720px;
+	}
+	#cabecera {
+		position:relative;
+		width:703px;
+		height:98px;
+		left:270px;
+		top:34px;
+		background-color:rgba(87,199,255,0.7);	
+	}
+	#imgmenu {
+		position: absolute;
+		background-repeat: no-repeat;
+		float:left;
+		width:215px;
+		height:37px;
+		top:22px;
+		left:30px;
+	}
+	#listamenu{
+		/*display: inline-block;*/
+		list-style: none;	
+		display: flex;
+		flex-direction:row;
+		float:right;
+		margin-top:41px;
+		margin-right:15px;
+	}
+	#lista{
+		
+	}
+	a{
+		font-size:14px;
+		margin:16px;
+		color:white;
+	}
+	.especial{
+	color:black;	
+	}
+	#texto{
+		font: 36px 'Alegreya SC',serif;
+		letter-spacing: 0px;
+		color: white;
+		text-align: center;
+		width: 386px;
+		height: 100px;
+		line-height: 36px;
+		padding-left: 295px;
+		padding-top: 187px;
+	}
+	
+	#circuloTexto{
+		border-radius: 50%;
+		width: 60px;
+		background: white;
+		color: gray;
+		margin-left: 460px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		font-size: 12px;
+	}
+	
+	#circuloTexto:hover{
+		background-color:#52d3b6;
+		color:white;
+		webkit-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+	}
+	
+	#texto2{
+		width: 420px;
+		height: 199px;
+		background: rgba(87, 255, 204, 0.7);
+		margin-left: 276px;
+		margin-top: 30px;
+		padding-top: 34px;
+		padding-left: 16px;
+		
+	}
+	
+	#spantext2{
+		font: 36px 'Alegreya SC',serif;
+		letter-spacing: 1px;
+		color: white;
+		line-height: 36px;
+		display:block;
+		text-align:center;
+	}
+	
+	#spantext2:hover{
+		color: rgb(247,137,40);
+		webkit-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+	}
+	
+	#spantext4{
+		font: 15px 'Alegreya SC',serif;
+		letter-spacing: 0px;
+		color: white;
+		line-height: 20px;
+		display: block;
+		text-align: center;
+		padding-top: 14px;
+		width: 393px;
+	}
+	
+	#spancirculos{
+		border-radius: 50%;
+		width: 8px;
+		background: white;
+		height: 8px;
+		display: inline-block;
+		font-size: 12px;
+		margin-top: 22px;
+		margin-right: 10px;
+	}
+	
+	.spancirculosHuecos{
+		border-radius: 50%;
+		border: 1px solid White;
+		width: 6px;
+		height: 6px;
+		display: inline-table;
+		margin-right: 10px;
+
+	}
+	
+	#centraCirculos{
+		margin-left: 170px;
+	}
+
+	
+	#contenedor2{
+		font: 36px 'Alegreya SC',serif;
+		letter-spacing: 0px;
+		color: #4c4c4c;
+		width: 490px;
+		height: 80px;
+		line-height: 36px;
+		padding-left: 448px;
+		padding-top: 260px;
+	}
+	
+	#contenedor2grande{
+		background-color: #f5f5f0;
+		padding-bottom:50px;
+	}
+	
+	#img1{
+		border-radius: 50%;
+		width: 270px;
+		background: white;
+		color: gray;
+		height: 270px;
+		background-image: url("imagenes/img_1.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	#img2{
+		border-radius: 50%;
+		width: 270px;
+		background: white;
+		color: gray;
+		height: 270px;
+		background-image: url("imagenes/img_2.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	#img3{
+		border-radius: 50%;
+		width: 270px;
+		background: white;
+		color: gray;
+		height: 270px;
+		background-image: url("imagenes/img_3.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	#texto3{
+		width: 198px;
+		color: #52d3b7;
+		height: 40px;
+		margin-top: 26px;
+		margin-left: 50px;
+		font-size: 30px;
+	}
+	
+	#texto4{
+		width: 216px;
+    color: #52d3b7;
+    height: 40px;
+    margin-top: 26px;
+    margin-left: 25px;
+    font-size: 30px;
+	}
+	
+	#texto5{
+		width: 216px;
+    color: #52d3b7;
+    height: 40px;
+    margin-top: 26px;
+    margin-left: 45px;
+    font-size: 30px;
+	}
+	
+	#texto6{
+		width: 1257px;
+		color: #808080;
+		margin-left: 54px;
+		height: 24px;
+		display: inline-block;
+		font-size: 19px;
+		text-align: center;
+		line-height: 30px;
+		letter-spacing: 1px;
+		margin-top: 37px;
+	}
+	
+	#imgtextouno{
+		float:left;
+		margin-left: 131px;
+	}
+	
+	#imgtextodos{
+		float:left;
+		margin-left: 140px;
+	}
+	
+	#imgtextotres{
+		float:left;
+		margin-left:140px;
+	}
+	
+	#botonMore{
+		margin-left: 621px;
+		margin-top: 103px;
+		text-align: center;
+		vertical-align: middle;
+		background-color: #52d3b6;
+		width: 106px;
+		height: 50px;
+		border-radius: 2px;
+		font: 17px 'Alegreya SC',serif;
+		color: white;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	
+	#botonMore:hover{
+		background-color:#4c4c4c;
+		webkit-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+	}
+	
+	#contenedor3{
+		font: 36px 'Alegreya SC',serif;
+		color: #4c4c4c;
+		width: 490px;
+		height: 58px;
+		margin:0px auto;
+		padding-top:60px;
+		text-align:center;
+	}
+	
+	#contenedor3grande{
+		background-color:white;
+	}
+	
+	#textoContenedor3{
+		font: 23px 'Alegreya SC',serif;
+    color: #ababab;
+    width: 854px;
+    height: 80px;
+    padding-top: 0px;
+    margin: 0px auto;
+    text-align: center;
+	}
+	
+	#tabla{
+		display: table;
+		margin: 72px;
+		text-align: center;
+		padding: 33px;
+		padding-top: 0px;
+		margin-top: 0;
+		margin-bottom: -16px;
+	}
+	.fila{
+		display: table-row;
+	}
+	
+	.fila2{
+		display: table-row;
+	}
+	
+	.fila3{
+		display: table-row;
+	}
+	
+	.col{
+		display: table-cell;
+		padding: 12px;
+	}
+	
+	
+	.col1-1{
+		background-image: url("imagenes/img_4.jpg");
+		padding: 0;
+		background-repeat: no-repeat;
+	}
+	.col1-2{
+		background-image: url("imagenes/img_5.jpg");
+		padding-left: 212px;
+		background-repeat: no-repeat;
+		padding-top: 209px;
+	}
+	.col1-3{
+		background-image: url("imagenes/img_6.jpg");
+		padding-left: 137px;
+		background-repeat: no-repeat;
+	}
+	
+	.col2-1{
+		font: 23px 'Alegreya SC',serif;
+		color: #23bde4;
+		border-left: 1px solid #E3E3E3;
+		border-right: 1px solid #E3E3E3;
+		padding-top: 30px;
+	}
+	.col3-1{
+		font-size: 18px;
+		color: rgb(183,190,197);
+		border-left: 1px solid #E3E3E3;
+		border-right: 1px solid #E3E3E3;
+		border-bottom: 1px solid #E3E3E3;
+		padding-bottom:40px;
+	}
+	
+	.col2-2{
+		font: 23px 'Alegreya SC',serif;
+		color: #23bde4;
+		border-left: 1px solid #E3E3E3;
+		border-right: 1px solid #E3E3E3;
+		padding-top: 30px;
+	}
+	.col3-2{
+		font-size: 18px;
+		color: rgb(183,190,197);
+		border-left: 1px solid #E3E3E3;
+		border-right: 1px solid #E3E3E3;
+		border-bottom: 1px solid #E3E3E3;
+	}
+	
+	.col2-3{
+		font: 23px 'Alegreya SC',serif;
+		color: #23bde4;
+		border-left: 1px solid #E3E3E3;
+		border-right: 1px solid #E3E3E3;
+		padding-top: 30px;
+	}
+	.col3-3{
+		font-size: 18px;
+		color: rgb(183,190,197);
+		border-left: 1px solid #E3E3E3;
+		border-right: 1px solid #E3E3E3;
+		border-bottom: 1px solid #E3E3E3;
+	}
+	
+	#botonMore2{
+		margin-left: 621px;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		text-align: center;
+		vertical-align: middle;
+		background-color: #82d5ea;
+		width: 106px;
+		height: 50px;
+		border-radius: 2px;
+		font: 17px 'Alegreya SC',serif;
+		color: white;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	
+	#botonMore2:hover{
+		background-color:#2a3538;
+		webkit-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+	}
+</style>
+</head>
+
+<body>
+	<div id="fondo">
+        <div id="cabecera">
+        <div><img id="imgmenu" src="imagenes/logo.png"/></div>
+        	<ul id="listamenu">
+            	<li class="lista"><a class="especial">home</a> </li>
+                <li class="lista"><a>about us</a></li>
+                <li class="lista"><a>services</a></li>
+                <li class="lista"><a>blog</a></li>
+                <li class="lista"><a>contacts</a></li>
+            </ul>
+        </div>
+        <div id="texto">Home Health Care <br> for Adults and Seniors</div>	
+			<div id="circuloTexto">
+			MORE
+			</div>
+			
+			<div id="texto2">
+				<span id="spantext2">Find Trusted, Quali-<br>fied Caregivers</span>
+				<span id="spantext4">Nertaser berrode srta dolore miseras ameteras
+				nuy- tasa certerya sederuytas leriuyses resradaes bytrasas kertuytas.</span>
+				<div id="centraCirculos">
+					<span id="spancirculos"></span>
+					<span class="spancirculosHuecos"></span>
+					<span class="spancirculosHuecos"></span>
+				</div>
+			</div>
+    </div>
+		
+    <div id="contenedor2grande">
+			<div id="contenedor2">
+				WELCOME TO OUR WEBSITE!
+			
+			</div> 
+			
+			<div id="imgtextouno">
+				<div id="img1"></div>
+				<div id="texto3">Personal Care</div>
+			</div>
+			
+			<div id="imgtextodos">
+				<div id="img2"></div>
+				<div id="texto4">Monitoring Visits</div>
+			</div>
+			
+			<div id="imgtextotres">
+				<div id="img3"></div>
+				<div id="texto5">Dementia Care</div>
+			</div>
+			
+			<div id="texto6"> Beasnseq usauntur magni dolores eo qui ratione voluptate msequi nesciuque porro quidolomas felerereta miuase 
+			jrease kuytras masertqui do- lorem ipsum, quiadesa dolores kytrasas miuyrasa. Derasen sitamet, consectetur adipisci velit, 
+			sed quia non numquam eius modi tempora in- cidunt, ut labore et dolore magnam.</div>
+			
+			<div id="botonMore"><b>MORE</b></div>
+			
+		</div>
+		
+		<div id="contenedor3grande">
+			<div id="contenedor3">WHAT WE DO</div> 
+			<div id="textoContenedor3">nertyase bertyeras kerode fertase berros vertyuasa miortyas</div>
+			<div id="tabla">
+				<div class="fila">
+					<div class="col col1-1"></div>
+					<div class="col col1-2"></div>
+					<div class="col col1-3"></div>
+				</div>
+				<div class="fila2">
+					<div class="col col2-1">Mertas veronas veros</div>
+					<div class="col col2-2">Doloertas kirtase berro</div>
+					<div class="col col2-3">Miuyse nuygase ferrode</div>
+				</div>
+				<div class="fila3">
+					<div class="col col3-1">Beasnseq usauntur madolores eosera ratione voluptate msequi.</div>
+					<div class="col col3-2">Meruytas ados eosera ratione voluptate casequi masnseq</div>
+					<div class="col col3-3">Meruytas ados eosera ratione voluptate casequi masnseq</div>
+				</div>
+			</div>
+			<div id="botonMore2"><b>MORE</b></div>
+		</div>
+</body>
+</html>
