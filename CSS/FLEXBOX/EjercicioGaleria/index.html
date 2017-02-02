@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	 <title>Plantilla básica de Bootstrap</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <!-- CSS de Bootstrap -->
+	 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	 <style>
+		 .row{
+			margin:3%;
+			margin-left:15%;
+			margin-right:15%;
+			
+		 }
+		.col-md-4{
+			border: 1px solid black;
+			background-color:lightblue;
+			padding: 10px;
+		}
+		body{
+		background-color: #efefef;
+	}
+	.flex-container{
+	 width: 100%;
+	 height:100%;
+	 margin: 10px auto;
+	 background-color:#efefef;
+	 display:-webkit-flex; 
+	 display: -ms-flexbox; 
+	 display: flex;
+	 -webkit-flex-wrap: wrap; 
+	 -ms-flex-wrap: wrap; 
+	 flex-wrap: wrap;
+	}
+	.flex-item{
+	 width:30%;
+	 margin:5px;
+	 border-radius: 2%;
+	 box-shadow: 0px 0px 11px 1px black;
+	}
+	
+	img{
+		border-radius: 2%;
+		width:100%; 
+	 text-align:center; 
+	 -webkit-align-self: center;
+	 -ms-flex-item-align: center;
+	 align-self: center;
+	 height: auto;
+	 margin:0; 
+	}
+	.flex-item img{
+	 width:100%; 
+	 text-align:center; 
+	 -webkit-align-self: center;
+	 -ms-flex-item-align: center;
+	 align-self: center;
+	 height: auto;
+	 margin:0; }
+	 
+	 h3, p {
+		text-align:center;
+	 }
+
+	.row.space-between{
+	 -webkit-justify-content: space-between;
+	 -ms-flex-pack: justify;
+	 justify-content: space-between;
+	} 
+	
+	.row div:nth-child(even) {
+	background: #f5f5f5
+	}
+	
+	.row div:nth-child(odd) {
+	background: #fff
+	}
+	 </style>
+	 <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+	 <!--[if lt IE 9]>
+	 <script src="../../assets/js/html5shiv.js"></script>
+	 <script src="../../assets/js/respond.min.js"></script>
+	 <![endif]-->
+ </head>
+ <body>
+ <div class="flex-container ">
+	 <div class="row space-between">
+	 <div class="col-md-4"><img src="imagenes/paisaje3.jpg"><h3>IMAGEN 1</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non sem quis
+tellus vulputate lobortis. Vivamus fermentum, tortor id ornare ultrices, ligula ipsum
+tincidunt pede, et blandit sem pede suscipit pede. Nulla cursus porta sem. Donec mollis nunc
+in leo.</p></div>
+	 <div class="col-md-4"><img src="imagenes/paisaje1.jpg"><h3>IMAGEN 2</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non sem quis
+tellus vulputate lobortis. Vivamus fermentum, tortor id ornare ultrices, ligula ipsum
+tincidunt pede, et blandit sem pede suscipit pede. Nulla cursus porta sem. Donec mollis nunc
+in leo.</p></div>
+	 <div class="col-md-4"><img src="imagenes/paisaje4.jpg"><h3>IMAGEN 3</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non sem quis
+tellus vulputate lobortis. Vivamus fermentum, tortor id ornare ultrices, ligula ipsum
+tincidunt pede, et blandit sem pede suscipit pede. Nulla cursus porta sem. Donec mollis nunc
+in leo.</p></div>
+	</div>
+	<div class=" row">
+	 <div class="col-md-4"><img src="imagenes/paisaje3.jpg"><h3>IMAGEN 4</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non sem quis
+tellus vulputate lobortis. Vivamus fermentum, tortor id ornare ultrices, ligula ipsum
+tincidunt pede, et blandit sem pede suscipit pede. Nulla cursus porta sem. Donec mollis nunc
+in leo.</p></div>
+	 <div class="col-md-4"><img src="imagenes/paisaje1.jpg"><h3>IMAGEN 5</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non sem quis
+tellus vulputate lobortis. Vivamus fermentum, tortor id ornare ultrices, ligula ipsum
+tincidunt pede, et blandit sem pede suscipit pede. Nulla cursus porta sem. Donec mollis nunc
+in leo.</p></div>
+	 <div class="col-md-4"><img src="imagenes/paisaje4.jpg"><h3>IMAGEN 6</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non sem quis
+tellus vulputate lobortis. Vivamus fermentum, tortor id ornare ultrices, ligula ipsum
+tincidunt pede, et blandit sem pede suscipit pede. Nulla cursus porta sem. Donec mollis nunc
+in leo.</p></div>
+	</div>
+	<div class="row">
+	 <div class="col-md-4"><img src="imagenes/paisaje3.jpg"><h3>IMAGEN 7</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non sem quis
+tellus vulputate lobortis. Vivamus fermentum, tortor id ornare ultrices, ligula ipsum
+tincidunt pede, et blandit sem pede suscipit pede. Nulla cursus porta sem. Donec mollis nunc
+in leo.</p></div>
+	 <div class="col-md-4"><img src="imagenes/paisaje1.jpg"><h3>IMAGEN 8</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non sem quis
+tellus vulputate lobortis. Vivamus fermentum, tortor id ornare ultrices, ligula ipsum
+tincidunt pede, et blandit sem pede suscipit pede. Nulla cursus porta sem. Donec mollis nunc
+in leo.</p></div>
+	 <div class="col-md-4"><img src="imagenes/paisaje4.jpg"><h3>IMAGEN 9</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non sem quis
+tellus vulputate lobortis. Vivamus fermentum, tortor id ornare ultrices, ligula ipsum
+tincidunt pede, et blandit sem pede suscipit pede. Nulla cursus porta sem. Donec mollis nunc
+in leo.</p></div>
+	</div>
+</div>
+
+	 <!-- Librería jQuery requerida por los plugins de JavaScript -->
+	 <script src="http://code.jquery.com/jquery.js"></script>
+	 <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+	 incluir archivos JavaScript individuales de los únicos
+	 plugins que utilices) -->
+	 <script src="js/bootstrap.min.js"></script>
+ </body>
+</html>
+

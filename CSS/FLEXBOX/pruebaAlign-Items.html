@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="">
+	<head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+        	.flex-container{
+				width:250px;
+				height:140px;
+				padding:5px;
+				margin:50px auto;
+				background-color: #124678;
+				display:-webkit-flex; 
+				display: -ms-flexbox; 
+				display: inline-flex;
+				flex-flow: row nowrap;
+				/*align-items:flex-start;*/    /* aparece al principio del contenedor*/
+				/*align-items:flex-end;  */   /* aparece al final del contenedor*/
+				/*align-items:center;*/         /*aparece en medio del contenedor*/
+				/*align-items:stretch; */      /* aparece estirado ocupando todo el contenedor
+				                              hay que quitar la altura para que no afecte y se haga
+											  sin problemas*/
+				align-items:baseline;        /*aparece alineado segun la base de los elementos
+				                                  dentro del contenedor, hay que cambiar el tamaño de
+												  la letra para ver la diferencia*/
+			}   
+			
+			.flex-item {
+				display: inherit;
+				width:50px;
+				height:50px;
+				background-color:#ccc;	
+				margin:5px;
+			}
+			
+			.flex-item p{
+				width:100%;
+				text-align:center;
+			}
+			
+			#alto {
+				font-size:2em;
+				height:70px;
+			}
+        </style>
+	</head>
+			
+	<body>
+        <div class="flex-container">
+        	<div class="flex-item">
+            	<p>1</p>
+            </div>
+            <div class="flex-item">
+            	<p>2</p>
+            </div>
+            <div class="flex-item">
+            	<p>3</p>
+            </div>
+            <div id="alto" class="flex-item">
+            	<p>4</p>
+            </div>
+            <div class="flex-item">
+            	<p>5</p>
+            </div>
+            <div class="flex-item">
+            	<p>6</p>
+            </div>
+        </div>
+	</body>
+</html>

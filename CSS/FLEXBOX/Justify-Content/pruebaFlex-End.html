@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style>
+.flex-container{
+ width: 250px;
+ height:100px;
+ padding:5px;
+ margin: 10px auto;
+ background-color:#124678;
+ display:-webkit-flex; 
+ display: -ms-flexbox; 
+ display: flex;
+}
+.flex-item{
+ display: inherit;
+ width:50px;
+ height:50px;
+ background-color:#ccc;
+ margin:5px;
+}
+.flex-item p{
+ width:100%; 
+ text-align:center; 
+ -webkit-align-self: center;
+ -ms-flex-item-align: center;
+ align-self: center; 
+ margin:0; }
+
+.flex-container.flex-end{
+ -webkit-justify-content: flex-end;
+ -ms-flex-pack: end;
+ justify-content: flex-end;
+}
+</style>
+</head>
+
+<body>
+<div class="flex-container flex-end">
+   <div class="flex-item"><p>1</p></div>
+   <div class="flex-item"><p>2</p></div>
+   <div class="flex-item"><p>3</p></div>
+</div> 
+</body>
+</html>
