@@ -1,0 +1,213 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			
+			@keyframes animacionBarco{ 
+				/*Indicamos que salimos de la posición 0*/ 
+				from{  
+					left:-300px;
+				}  
+				/*Indicamos que al final la posición debe ser 350*/  
+				to{  
+					left:0px;
+				}  
+			}
+			
+			@keyframes animacionInterrogacion{ 
+				/*Indicamos que salimos de la posición 0*/ 
+				from{  
+					opacity:0;
+				}  
+				80%{
+					opacity:0;
+				}
+				/*Indicamos que al final la posición debe ser 350*/  
+				to{  
+					opacity:1;
+				}  
+			}
+			
+            @-webkit-keyframes animacionNubes1 {
+                0%       {left: 0px;}
+                99.9999%   {left: -720px;}
+                100%     {left: 0px;}
+            }
+            
+            @-webkit-keyframes animacionNubes2 {
+                0%       {left: 720px;}
+                99.9999%   {left: 0px;}
+                100%     {left: 720px;}
+            }
+            
+            @-webkit-keyframes animacionAguaFrente {
+                0%   {bottom: -70px; left: -30px;}
+                25%  {bottom: -68px; left: -32px;}
+                70%  {bottom: -72px; left: -34px;}
+                100% {bottom: -69px; left: -30px;}
+            }
+            
+            @-webkit-keyframes animacionAguaFondo {
+                0%   {bottom: 10px; left: -20px;}
+                25%  {bottom: 8px; left: -22px;}
+                70%  {bottom: 12px; left: -24px;}
+                100% {bottom: 9px; left: -20px;}
+            }
+             
+			body{
+				background-image: url(fondo.jpg);
+			}
+			
+			#contenedor{
+				width: 750px;
+				height: 340px;
+				top: 24px;
+				left: 265px;
+				box-shadow: 0px 0px 8px black;
+				background-image: url(background.png);
+				position:absolute;
+				overflow: hidden;
+			}
+			
+            ul{
+                list-style: none;
+            }
+            
+            #nubes {
+                position: absolute;
+                top: 0px;
+                z-index: 0;
+            }
+            
+            #nubes1 {
+                width:720px;
+                position: absolute;
+                left:0px;
+                -webkit-animation: animacionNubes1 30s infinite linear;
+                -moz-animation: animacionNubes1 30s infinite linear;
+                -o-animation: animacionNubes1 30s infinite linear;
+                -ms-animation: animacionNubes1 30s infinite linear;
+                animation: animacionNubes1 30s infinite linear;
+            }
+            
+            #nubes2 {
+                width: 720px;
+                position: absolute;
+                left: 720px;
+                -webkit-animation: animacionNubes2 30s infinite linear;
+                -moz-animation: animacionNubes2 30s infinite linear;
+                -o-animation: animacionNubes2 30s infinite linear;
+                -ms-animation: animacionNubes2 30s infinite linear;
+                animation: animacionNubes2 30s infinite linear;
+            }
+            
+            .nube1 {
+                width: 172px;
+                height: 121px;
+                background-image: url(nube1.png);
+                position: absolute;
+                top: 10px;
+                left: 40px;
+            }
+            
+            .nube2 {
+                width: 121px;
+                height: 75px;
+                background-image: url(nube2.png);
+                position: absolute;
+                top: -25px;
+                left: 300px;
+            }
+            
+            .nube3 {
+                width: 132px;
+                height: 105px;
+                background-image: url(nube3.png);
+                position: absolute;
+                top: -5px;
+                left: 530px;
+            }
+	
+			#texto{
+				position: absolute;
+				top: 42px;
+				left: 321px;
+				font-size: 50px;
+				text-align: center;
+				width: 323px;
+				font-weight:bold;
+				color: #06C;
+				animation: animacionInterrogacion 8s 1 linear;
+			}
+			
+			#mar1 {
+				width: 107%;
+				height: 86px;
+				background-image: url(agua-frente.png);
+				position: absolute;
+				top: 257px;
+                -webkit-animation: animacionAguaFrente 2s infinite ease-in-out;
+                -moz-animation: animacionAguaFrente 2s infinite ease-in-out;
+                -o-animation: animacionAguaFrente 2s infinite ease-in-out;
+                -ms-animation: animacionAguaFrente 2s infinite ease-in-out;
+                animation: animacionAguaFrente 2s infinite ease-in-out;
+			}
+			
+			#mar2 {
+				width: 107%;
+				height: 79px;
+				background-image: url(agua-fondo.png);
+				position: absolute;
+				top: 251px;
+                -webkit-animation: animacionAguaFondo 3s infinite ease-in-out;
+                -moz-animation: animacionAguaFondo 3s infinite ease-in-out;
+                -o-animation: animacionAguaFondo 3s infinite ease-in-out;
+                -ms-animation: animacionAguaFondo 3s infinite ease-in-out;
+                animation: animacionAguaFondo 3s infinite ease-in-out;
+			}
+			
+			#barco{
+				width: 100%;
+				height: 215px;
+				background-image: url(Bote.png);
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 90px;
+				animation: animacionBarco 4s 1 linear;
+			}
+			
+			#interrogacion{
+				width: 25px;
+				height: 50px;
+				background-image: url(interrogacion.png);
+				background-repeat: no-repeat;
+				position:absolute;
+				top:65px;
+				left:193px;
+				animation: animacionInterrogacion 6s 1 linear;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="contenedor">
+            <div id="nubes">
+                <ul id="nubes1">
+                    <li class="nube1"></li>
+                    <li class="nube2"></li>
+                    <li class="nube3"></li>
+                </ul>
+                <ul id="nubes2">
+                    <li class="nube1"></li>
+                    <li class="nube2"></li>
+                    <li class="nube3"></li>
+                </ul>
+            </div>
+            <div id="texto">Mi primer más Banner con CSS3</div>
+            <div id="mar2"></div>
+            <div id="barco"></div>
+            <div id="interrogacion"></div>
+            <div id="mar1"></div>
+            
+		</div>
+	</body>
+</html>
