@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAO;EACP,WAAW,EAAE,IAAI;EACjB,eAAe,EAAE,IAAI;EACrB,kBAAQ;IAAE,eAAe,EAAE,SAAS;EACpC,gCAAe;IAAE,WAAW,EAAE,MAAM",
+"sources": ["prueba.scss"],
+"names": [],
+"file": "prueba.css"
+}

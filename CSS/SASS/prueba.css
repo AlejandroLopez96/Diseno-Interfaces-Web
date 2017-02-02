@@ -1,0 +1,14 @@
+p, div {
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+  p:hover, div:hover {
+    text-decoration: underline; 
+}
+
+  body.firefox p, body.firefox div {
+    font-weight: normal; 
+}
+
+/*# sourceMappingURL=prueba.css.map */
