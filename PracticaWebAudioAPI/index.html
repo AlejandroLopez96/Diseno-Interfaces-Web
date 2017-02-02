@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Audio API</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Welcome to the Web Audio API</h1>
+        
+        
+        <form><input id="frequency" type="range" min="0" max="16000" step="1" value="440" onchange="CambioFrecuencia(this.value)"></form>
+        Señal:
+        <form><input type="radio" value="0" checked onclick="CambiaTipo('sine')">Sine</input></form>
+        <form><input type="radio" value="1" onclick="CambiaTipo('square')">Square</input></form>
+        <form><input type="radio" value="2" onclick="CambiaTipo('sawtooth')">Sawtooth</input></form>
+        <form><input type="radio" value="3" onclick="CambiaTipo('triangle')">Triangle</input></form>
+        <p><button onclick="play()">Play/pause</button></p>
+        
+        <script>
+            var context = new AudioContext();
+            oscillator = context.createOscillator();
+            // Connect the oscillator to our speakers
+            oscillator.isPlaying = false;
+            oscillator.connect(context.destination);
+            //oscillator.start(context.currentTime);
+            //oscillator.stop(context.currentTime + 3);
+
+            function play(){
+                (oscillator.isPlaying ? oscillator.stop() : oscillator.start());
+                oscillator.isPlaying =! oscillator.isPlaying;
+            }
+            
+            function CambioFrecuencia(val){
+                oscillator.frequency.value = val;
+            }
+            
+            function CambiaTipo(type){
+                oscillator.type = type;
+            }
+        </script>
+    </body>
+</html>

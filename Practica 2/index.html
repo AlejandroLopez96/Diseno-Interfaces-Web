@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div.contenedor {
+                background: #4c4c4c;
+                background: linear-gradient(to bottom, #4c4c4c 0%,#adadad 12%,#666666 25%,#474747 41%,#2c2c2c 50%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+                border: 6px double #444444;
+                border-radius: 50px 50px 50px 50px;
+                height: 120px;
+                margin: 0 auto;
+                overflow: hidden;
+                padding: 0 30px;
+                width: 190px;
+            }
+
+            a.play i.icon-play {
+                background-image: url("btns.png");
+                background-position: 0px 0;
+            }
+            a.play i.icon-play:hover {
+                background-image: url("btns.png");
+                background-position: 0px 40px;
+            }
+            a.pause i.icon-pause {
+                background-image: url("btns.png");
+                background-position: 160px 0;
+            }
+            a.pause i.icon-pause:hover {
+                background-position: 160px 40px;
+            }
+            a.stop i.icon-stop {
+                background-image: url("btns.png");
+                background-position: 120px 0;
+            }
+            a.stop i.icon-stop:hover {
+                background-position: 120px 40px;
+            }
+            a.down i.icon-volume-down {
+                background-image: url("btns.png");
+                background-position: 40px 0;
+            }
+            a.down i.icon-volume-down:hover {
+                background-position: 40px 40px;
+            }
+            a.up i.icon-volume-up {
+                background-image: url("btns.png");
+                background-position: 80px 0;
+            }
+            a.up i.icon-volume-up:hover {
+                background-position: 80px 40px;
+            }
+            div.reproduccion {
+                margin: 0 30px;
+            }
+
+            div.audiocontrols h3 {
+                border-bottom: 1px solid #444444;
+                color: #F2F2F2;
+                font-family: Verdana;
+                font-size: 14px;
+                margin: 5px 0 0;
+                padding-bottom: 4px;
+                text-align: center;
+                text-shadow: 1px 2px 1px #111111;
+            }
+            [class^="icon-"], [class*=" icon-"] {
+                display: inline-block;
+                height: 40px;
+                line-height: 14px;
+                margin-top: 1px;
+                vertical-align: text-top;
+                width: 40px;
+            }
+                /*audio{display:none}*/
+
+            .audiocontrols > .volume {
+                height: 14px;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <audio preload="auto" autobuffer controls id="audio">
+                <source src="trompeta.mp3"/>
+            </audio>
+            <div class="audiocontrols">
+                <h3>Mi Reproductor html5</h3>
+                    <div class="reproduccion">
+                        <a href="#" class="play"><i class="icon-play"></i></a>
+                        <a href="#" class="pause"><i class="icon-pause"></i></a>
+                        <a href="#" class="stop"><i class="icon-stop"></i></a>
+                    </div>
+                    <div class="volume">
+                        <a href="#" class="down"><i class="icon-volume-down"></i></a>
+                        <a href="#" class="up"><i class="icon-volume-up"></i></a>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

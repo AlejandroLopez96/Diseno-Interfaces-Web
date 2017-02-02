@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function iniciar(){
+                var elemento=document.getElementById('lienzo');
+                lienzo=elemento.getContext('2d');
+                lienzo.beginPath();
+                lienzo.arc(100,100,40,0,(Math.PI/180)*360, true);
+                lienzo.stroke();
+                lienzo.translate(100,100);
+                lienzo.rect(-50,-50, 100, 100);
+                lienzo.closePath();
+                window.addEventListener('mousemove', animacion, false);
+                }
+            function animacion(e){
+                lienzo.beginPath();
+                lienzo.rect(-50,-50, 100, 100);
+                lienzo.rotate(90);
+                lienzo.stroke();
+                lienzo.closePath();
+                
+                
+            } window.addEventListener("load", iniciar, false);
+        </script>
+    </head>
+    <body>
+        <canvas id="lienzo" width="500" height="300"> 
+        </canvas>
+    </body>
+</html>
